@@ -2,26 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.hero-bg {
+  background-image: url("/pexels-maria-geller-1803880.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.hero-button-bg {
+  background-image: url("/button.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 80px solid transparent;
+  border-bottom: 80px solid transparent;
+  border-right: 80px solid #b22222;
+}
+
+.equipe-bg {
+  background-image: url("/team.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.black-and-white {
+  filter: grayscale(
+    100%
+  ); /* Aplica o filtro para deixar a imagem em preto e branco */
+  transition: filter 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+
+.colored {
+  filter: grayscale(
+    0%
+  ); /* Remove o filtro de preto e branco para mostrar as cores originais */
+}
+
+.clicked {
+  background-color: #b22222;
+}
+
+.estudio-bg {
+  background-image: url("/Fundo tatuagens.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.faq-bg {
+  background-image: url("/faq.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contatos-bg {
+  background-image: url("/contato.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-contatos {
+  background-image: url("/button.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.membro-bg {
+  background-image: url("/time.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
