@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Marcellus, Raleway } from "@next/font/google";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import Link from "next/link";
 
 const marcellus = Marcellus({
   subsets: ["latin"],
@@ -191,11 +192,12 @@ const Equipe = () => {
             )}
 
             <div className="absolute bottom-0 left-0 right-0 flex justify-center items-center h-16 bg-[#404040]/40 cursor-pointer">
-              <p
+              <Link
+                href="/membro"
                 className={`${marcellus.variable} font-marcellus text-base md:text-xl text-center text-white`}
               >
                 Bio e Trabalhos
-              </p>
+              </Link>
             </div>
           </div>
         )}
